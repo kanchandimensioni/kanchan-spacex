@@ -11,7 +11,6 @@ const index = props => {
   return (
       
             <div className="spacex-launch-wrapper__launch-tile">
-              {console.log(mission_name)}
               <div className="spacex-launch-wrapper__image-wrapper">
               <img 
                 className="spacex-launch-wrapper__image" 

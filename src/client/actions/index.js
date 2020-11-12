@@ -2,8 +2,7 @@
 export const FETCH_LAUNCHES = 'fetch_launches';
 export const fetchLaunches = (page=0, filters ={}) => async (dispatch, getState, api) => {
   
-  let listEndPoint = `https://api.spacexdata.com/v3/launches/?page=${page}`;
-  console.log('filters', filters );
+  let listEndPoint = `https://api.spacexdata.com/v3/launches/?page=${page}`;\
   if (filters.launchSuccess) {
     listEndPoint += `&launch_success=${filters.launchSuccess}`;
   }

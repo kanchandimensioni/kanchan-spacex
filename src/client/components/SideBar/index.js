@@ -14,7 +14,6 @@ class Filter extends Component {
     };
   }
   onToggleHandler = (filterName, filterVal) => {
-    console.log('toggleHandler called');
     let newState = {};
     const selIndex = filterVal ? 0 : 1;
     switch(filterName) {
@@ -30,7 +29,6 @@ class Filter extends Component {
         newState = { landStatus: filterVal };
       break;
       default: 
-        console.log('Default');
         newState = { ...this.state,  
           launchYear : '',
           launchSuccess:  null,
