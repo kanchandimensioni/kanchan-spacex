@@ -15,6 +15,9 @@ body {
     box-shadow: none;
     cursor: pointer;
   }
+  &__main-container {
+    overflow: hidden;
+  }
   &__filter-container{
     width: 350px;
     float: left;
@@ -116,8 +119,17 @@ body {
     font-size: 30px;
     text-align: center;
     margin: 20px 0;
+    width: 100%;
     span {
       color: #575857;
+    }
+  }
+  @media (min-width:701px) and (max-width:1024px) {
+    &__launch-tile {
+      width: calc(50% - 50px);
+      &:nth-child(even){
+        margin-right: 0;
+      }
     }
   }
   @media (max-width:700px) {
@@ -137,16 +149,10 @@ body {
       width: 250px;
     }
   }
-  @media (min-width:701px) and (max-width:1024px) {
-    &__launch-tile {
-      width: calc(50% - 50px);
-      &:nth-child(even){
-        margin-right: 0;
-      }
-    }
-  }
+ 
  
 }
+
 @media (min-width:1440px) {
   .spacex-launch-wrapper {
     max-width: 1440px;
